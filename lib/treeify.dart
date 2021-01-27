@@ -52,7 +52,7 @@ void _growBranch(
   var circular = false;
   final lastStatesCopy = [...lastNodes, _Node(root, last)];
 
-  if (lastNodes.length > 0) {
+  if (lastNodes.isNotEmpty) {
     // based on the "was last element" states of whatever we're nested within,
     // we need to append either blankness or a branch to our line
     for (var i = 0; i < lastNodes.length; i++) {
