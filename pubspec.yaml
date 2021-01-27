@@ -1,0 +1,14 @@
+name: treeify
+description: A dart port of the treeify.js for console printing trees
+version: 0.0.1-nullsafety.0
+author: Rex Magana
+homepage:
+
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+
+dependencies:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
