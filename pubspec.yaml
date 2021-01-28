@@ -1,6 +1,6 @@
 name: treeify
 description: A dart port of the treeify.js for creating trees or directory structures to be printed to console
-version: 0.0.1-nullsafety.1
+version: 0.0.1-nullsafety.2
 repository: https://github.com/Nolence/treeify
 
 environment:
