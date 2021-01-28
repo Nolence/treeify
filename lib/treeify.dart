@@ -1,16 +1,23 @@
 library treeify;
 
-class Treeify {
-  /// hideFunctions and lineCallback are curried, which means we don't break apps using the older form
-  static void asLines(Map obj, bool showValues, lineCallback) {
-    _growBranch('.', obj, false, [], showValues, lineCallback);
+/// This class should not be extended. Instead, call the static funtions
+/// [asLines] or [asTree] to get the result of tree.
+abstract class Treeify {
+  /// This will give you access to each lines in the callback function
+  /// [lineCallback]. This can be useful to modify the output in any form.
+  static void asLines(
+    Map obj,
+    Function(String line) lineCallback, [
+    bool showValues = true,
+  ]) {
+    _growBranch('.', obj, false, const [], showValues, lineCallback);
   }
 
   /// Outputs the entire tree, returning it as a string with line breaks.
   static String asTree(Map obj, bool showValues) {
     var tree = '';
 
-    _growBranch('.', obj, false, [], showValues, (line) {
+    _growBranch('.', obj, false, const [], showValues, (line) {
       tree += line + '\n';
     });
 
