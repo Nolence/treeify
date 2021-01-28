@@ -1,6 +1,6 @@
 # treeify
 
-This is a port of the Javascript library [treeify](https://github.com/notatestuser/treeify). Treeify converts maps nice, visible depth-indented trees for console printing. The structure generated is similar to what you get by running the tree command on Unixy platforms.
+This is a port of the Javascript library [treeify](https://github.com/notatestuser/treeify). Treeify converts maps into nice, visible depth-indented trees for console printing. The structure generated is similar to what you get by running the tree command on Unixy platforms.
 
 ```
 {
